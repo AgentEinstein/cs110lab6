@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    .navBar{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(186, 188, 252);
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tab{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(240, 255, 244);
+        margin: 5px;
+        text-align: center;
+        align-content: top;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +31,15 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
 </head>
 
 <body>
+    <div class="navBar">
+        <p class="tab"><a href="new-book.html">New Book</a></p>
+        <p class="tab"><a href="book-list.html">Book List</a></p>
+    </div>
+    
     <div class="container">
         <hr>
         <h1>List of books</h1>

@@ -7,34 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Create New Book</h1>
-    <hr>
-    <form action="http://localhost:3000/book" method="POST">
-        <div class="form-group">
-            <label for="isbn">ISBN</label>
-            <input id="isbn" class="form-control" name="isbn" required>
-        </div>
-        <div class="form-group">
-            <label for="title">Title</label>
-            <input id="title" class="form-control" name="title" required>
-        </div>
-        <div class="form-group">
-            <label for="author">Author</label>
-            <input id="author" class="form-control" name="author" required>
-        </div>
-        <div class="form-group">
-            <label for="published_date">Published Date</label>
-            <input id="published_date" class="form-control" name="published_date" type="date" required>
-        </div>
-        <div class="form-group">
-            <label for="publisher">Publisher</label>
-            <input id="publisher" class="form-control" name="publisher" required>
-        </div>
-        <div class="form-group">
-            <label for="number_of_pages">Number Of Pages</label>
-            <input id="number_of_pages" class="form-control" name="number_of_pages" type="number" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="navBar">
+        <p class="tab"><a href="new-book.html">New Book</a></p>
+        <p class="tab"><a href="book-list.html">Book List</a></p>
+    </div>
+    <div class="container">
+        <h1>Create New Book</h1>
+        <hr>
+        <form action="http://localhost:3000/book" method="POST">
+            <div class="form-group">
+                <label for="ISBN">ISBN</label>
+                <input class="form-control" name="isbn">
+            </div>
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input class="form-control" name="title">
+            </div>
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input class="form-control" name="author">
+            </div>
+            <div class="form-group">
+                <label for="publish_date">Published Date</label>
+                <input class="form-control" name="publish_date" type="date">
+            </div>
+            <div class="form-group">
+                <label for="Publisher">Publisher</label>
+                <input class="form-control" name="publisher">
+            </div>
+            <div class="form-group">
+                <label for="number_of_pages">Number Of Pages</label>
+                <input class="form-control" name="numOfPages" type="number">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
